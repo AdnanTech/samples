@@ -124,7 +124,8 @@ namespace GitHubIssueClassification
             // </SnippetPredict>
 
             // <SnippetOutputPrediction>
-            Console.WriteLine($"=============== Single Prediction just-trained-model - Result: {prediction.Area} ===============");
+            Console.WriteLine("{0} - {1}", issue.Title, issue.Description);
+            Console.WriteLine($"=============== Single Prediction just-trained-model - Result (System.Area.TopicName): {prediction.Area} ===============");
             // </SnippetOutputPrediction>
 
             // <SnippetReturnModel>
@@ -185,7 +186,9 @@ namespace GitHubIssueClassification
             // </SnippetPredictIssue>
 
             // <SnippetDisplayResults>
-            Console.WriteLine($"=============== Single Prediction - Result: {prediction.Area} ===============");
+            Console.WriteLine($"*************************************************************************************************************");
+            Console.WriteLine("{0} - {1}", singleIssue.Title, singleIssue.Description);
+            Console.WriteLine($"=============== Single Prediction - Result (System.Area.TopicName): {prediction.Area} ===============");
             // </SnippetDisplayResults>
         }
 
